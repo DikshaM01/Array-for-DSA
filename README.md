@@ -65,3 +65,14 @@ use hashset
 time complexity nlogn+n
 space->0(n)
 2 pointer approach
+i=0;
+for(j=1;j<n;j++)
+if(arr[j]!=arr[i])
+{
+arr[i+1]=arr[i];
+i++;
+}
+}
+return i+1;
+}
+time complexity->0(n)
